@@ -1,0 +1,282 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// MIS SNIPPESTS - JOSERAFA78
+	"Console.log": {
+		"prefix": "clg",
+		"body": [
+			"console.log($1);",
+			"$2"
+		],
+		"description": "Console.log"
+	}
+		"document.getElementById()": {
+		"prefix": "docbi",
+		"body": [
+			"document.getElementById('$1');",
+			"$2"
+		],
+		"description": "document.getElementById()"
+	}
+		"alert()": {
+		"prefix": "alt",
+		"body": [
+			"alert('$1');",
+			"$2"
+		],
+		"description": "alert();"
+	}
+		"document.write()": {
+		"prefix": "docw",
+		"body": [
+			"document.write('$1');",
+			"$2"
+		],
+		"description": "document.write();"
+	}
+		"prompt()": {
+		"prefix": "propt",
+		"body": [
+			"prompt('Texto a Mostrar','$1');",
+			"$2"
+		],
+		"description": "prompt();"
+	}
+	/* Variables */
+	"var": {
+		"prefix": ".v",
+		"body": [
+			"var $1;",
+			"$2"
+		],
+		"description": "Variable - Var;"
+	}
+		"var x=0;": {
+		"prefix": "v",
+		"body": [
+			"var $1 = '$2';",
+			"$3"
+		],
+		"description": "Variable - Var;"
+	}
+		"var Array=[];": {
+		"prefix": "vr",
+		"body": [
+			"var $1 = ['$2','$3','$4'];",
+			"$5"
+		],
+		"description": "Variable - Tipo Arreglo;"
+	}
+		"var Objetos={};": {
+		"prefix": "vo",
+		"body": [
+			"var $1 = {$2:'$3',$4:'$5',$6:'$7'};",
+			"$8"
+		],
+		"description": "Variable - Tipo Arreglo;"
+	}
+		"let": {
+		"prefix": ".l",
+		"body": [
+			"let $1;",
+			"$2"
+		],
+		"description": "Variable - let;"
+	}
+		"let x=0": {
+		"prefix": "l",
+		"body": [
+			"let $1 = '$2';",
+			"$3"
+		],
+		"description": "Variable - let;"
+	}
+		"let Array=[];": {
+		"prefix": "lr",
+		"body": [
+			"let $1 = ['$2'];",
+			"$3"
+		],
+		"description": "Variable - Tipo Arreglo;"
+	}
+		"let Objetos={};": {
+		"prefix": "lo",
+		"body": [
+			"let $1 = {$2:'$3',$4:'$5',$6:'$7'};",
+			"$8"
+		],
+		"description": "Variable - Tipo Arreglo;"
+	}
+	/* Constanantes */
+	"const": {
+		"prefix": ".c",
+		"body": [
+			"const $1;",
+			"$2"
+		],
+		"description": "Variable - Constantes;"
+	}
+		"const x=0;": {
+		"prefix": "c",
+		"body": [
+			"const $1 = '$2';",
+			"$3"
+		],
+		"description": "Variable - Constantes;"
+	}
+		"const Array=[];": {
+		"prefix": "cr",
+		"body": [
+			"const $1 = ['$2','$3','$4'];",
+			"$5"
+		],
+		"description": "Constantes- Tipo Arreglo;"
+	}
+		"const Objetos={};": {
+		"prefix": "co",
+		"body": [
+			"const $1 = {$2:'$3',$4:'$5',$6:'$7'};",
+			"$8"
+		],
+		"description": "Constantes - Tipo Objetos;"
+	}
+	/* Ternarios */
+	"var Ternario": {
+		"prefix": "vt",
+		"body": [
+			"var $1 = ($2)?'Verdadero$3':'Falso$4';",
+			"$5"
+		],
+		"description": "Operador Ternario - Var;"
+	}
+		"let Ternario": {
+		"prefix": "lt",
+		"body": [
+			"let $1 = ($2)?'Verdadero$3':'Falso$4';",
+			"$5"
+		],
+		"description": "Operador Ternario - let;"
+	}
+		"Const Ternario": {
+		"prefix": "ct",
+		"body": [
+			"const $1 = ($2)?'Verdadero$3':'Falso$4';",
+			"$5"
+		],
+		"description": "Operador Ternario - Constantes;"
+	}
+	/* Plantilla de Cadenas con Backtick */
+	"Plantilla``": {
+		"prefix": ".''",
+		"body": [
+			"`${1:Texto}  ${ $2 } ${3:Texto}`$4"
+		],
+		"description": "Operador Ternario - Constantes;"
+	}
+	/* Funcion anonima */
+	"var Funcion Anonima": {
+		"prefix": "vano",
+		"body": [
+			"var $1 = function($2){",
+			"return $3 ;",
+			"}"
+		],
+		"description": "Funcion Aninima - Var;"
+	}	
+		"let Funcion Anonima": {
+		"prefix": "lano",
+		"body": [
+			"let $1 = function($2){",
+			"return $3 ;",
+			"}"
+		],
+		"description": "Funcion Anonima - let;"
+	}	
+		"const Funcion Anonima": {
+		"prefix": "cano",
+		"body": [
+			"const $1 = function($2){",
+			"return $3 ;",
+			"}"
+		],
+		"description": "Funcion Anonima - Const;"
+	}	
+		"class": {
+		"prefix": "clas01",
+		"body": [
+			"class ${1:NobreClase} {",
+			"constructor($2,$3,$4,$5,$6){",
+			"this.$2=$2;",
+			"this.$3=$3;",
+			"this.$4=$4;",
+			"this.$5=$5;",
+			"this.$6=$6;",
+			"}",
+			"${7:funcion}(){",
+			" return ${8:Sentencia};",
+			"}",
+			"}"
+		],
+		"description": "Crea Clase - Class;"
+	}	
+		"classExtends": {
+		"prefix": "classExten",
+		"body": [
+			"class ${1:NobreClase} extends ${2:ClasePadre} {",
+			"constructor(${3:AtriPadre},${4:AtriPadre},${5:AtriPadre},${6:hijo},${7:hijo},${8:hijo}){",
+			"super($3,$4,$5);",
+			"this.$6=$6;",
+			"this.$7=$7;",
+			"this.$8=$8;",
+			"}",
+			"${9:funcion}(){",
+			" return ${10:Sentencia};",
+			"}",
+			"}"
+		],
+		"description": "Crea Clase Extendida- Class Extends;"
+	}	
+		"new variable": {
+		"prefix": "new_V",
+		"body": [
+			"var ${1:Variable} = new ${2:Clase}($3,$4,$5,$6);"
+		],
+		"description": "Instancia nuevo Objeto - var"
+	}
+		"new Constante": {
+		"prefix": "new_C",
+		"body": [
+			"const ${1:Variable} = new ${2:Clase}($3,$4,$5,$6);"
+		],
+		"description": "Instancia nuevo Objeto - Const"
+	}
+	"new Let": {
+		"prefix": "new_L",
+		"body": [
+			"let ${1:Variable} = new ${2:Clase}($3,$4,$5,$6);"
+		],
+		"description": "Instancia nuevo Objeto - let"
+	}
+	"if_Anidado": {
+		"prefix": "ifAni",
+		"body": [
+			"if (${1:Condicion1}) {",
+			"\t${2:Sentencia1}",
+			"} else if (${3:Condicion2}) {",
+			"\t${4:Sentencia2}",
+			"}"
+		],
+		"description": "If Anidado con Dos opciones"
+	}
+}

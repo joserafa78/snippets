@@ -1,0 +1,419 @@
+{
+	// Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Comentario Resaldado": {
+			"prefix": "comen2",
+			"body": [
+				"/*---------------------------------------------*/",
+				"\t /*-------${1:titulo}---------*",
+				"/*----------------------------------------------*/",
+				"$2"
+			],
+			"description": "Crea comentario Grande"
+		}
+		"root variables": {
+			"prefix": ":root_V",
+			"body": [
+				":root{",
+				"--${1:Variable}:#4E94AB$3;",
+				"}"
+			],
+			"description": "Crea la Variables Globales"
+		}
+		"FuentPersonalizada": {
+			"prefix": ":fuente_personalizasa",
+			"body": [
+				"@font-face {",
+				"\tfont-family:'mifuente1';",
+				"\tsrc: url();",
+				"}",
+				".mifuente1{",
+				"\tfont:bold 26px mifuente1;",
+				"}"
+			],
+			"description": "Crea la Variables Globales"
+		}
+		"Degradado_linial": {
+			"prefix": ":degradado_linial",
+			"body": [
+				"background: -webkit-linear-gradient(left, blue 2% ,red 98%);",
+				"background: -moz-linear-gradient(left, blue 2% ,red 98%);",
+				"background: -ms-linear-gradient(left, blue 2% ,red 98%);"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"Degradado_radial": {
+			"prefix": ":degradado_radial",
+			"body": [
+				"background: -webkit-radial-gradient(center,circle, blue 2% ,red 98%);",
+				"background: -moz-radial-gradient(center,circle, blue 2% ,red 98%);",
+				"background: -ms-radial-gradient(center,circle, blue 2% ,red 98%);"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"imagen_background": {
+			"prefix": ":imagen_background",
+			"body": [
+				"background-image: url(img/);",
+				" background-size:cover;/* auto,container */"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"imagen_transparente": {
+			"prefix": ":imagen_transparente",
+			"body": [
+				"background: linear-gradient(rgba(5,7,12,0.70),rgba(5,7,12,0.70)),url(img/);"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"borde_Exterior": {
+			"prefix": ":borde_exterior",
+			"body": [
+				"outline: 2px dashed red;/* Crea borde */",
+				"outline-offset: 20px; /* Distancia del borde */"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"Escala de Elementos": {
+			"prefix": ":escala_elemento",
+			"body": [
+				"transform: scale(0.78);/* Escala Reducida, 1=Tamaño Real */"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"Invertir Elementos": {
+			"prefix": ":invertir_elementos",
+			"body": [
+				"transform: scale(1,-1);/* Inversion */"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"Rotacion de Elementos": {
+			"prefix": ":rotar_elemento",
+			"body": [
+				"transform: rotate(20deg);/* rota Radiantes*/"
+			],
+			"description": "Crea un Degradado Linial"
+		}
+		"Transicion_Rotando": {
+			"prefix": ":animacion_rotando",
+			"body": [
+				"-webkit-transition: -webkit-transform 1s ease 0.3s ;/* Chrome */",
+				"-moz-transition: -webkit-transform 1s ease 0.3s ; /* Firefox */",
+				"/*OJO: Sacar de las Llaves.*/",
+				"${1:Elemento}:hover{",
+				"\ttransform: rotate(30deg);",
+				"}"
+			],
+			"description": "Crea una animacion o transicion de elementos Rota."
+		}
+		"Transicion_TransladandoXY": {
+			"prefix": ":animacion_transladando_X,Y",
+			"body": [
+				"-webkit-transition: -webkit-transform 1s ease 0.3s ;/* Chrome */",
+				"-moz-transition: -webkit-transform 1s ease 0.3s ; /* Firefox */",
+				"/*OJO: Sacar de las Llaves.*/",
+				"${1:Elemento}:hover{",
+				"\ttransform: translate(-30xp, 50px);",
+				"}"
+			],
+			"description": "Crea una animacion De translado en Dos Dimensiones."
+		}
+		"Transicion_TransladandoXYZ": {
+			"prefix": ":animacion_transladando_X,Y,Z",
+			"body": [
+				"-webkit-transition: -webkit-transform 1s ease 0.3s ;/* Chrome */",
+				"-moz-transition: -webkit-transform 1s ease 0.3s ; /* Firefox */",
+				"/*OJO: Sacar de las Llaves.*/",
+				"${1:Elemento}:hover{",
+				"\ttransform: translate(-30xp, 50px, 50px);",
+				"}"
+			],
+			"description": "Crea una animacion De translado en Tres Dimensiones."
+		}
+		"inputTxt_clase": {
+			"prefix": "inputTxt",
+			"body": [
+				"${1:Punto}inputText{ /* Clase para Input con Iconos */",
+				"\twidth:80%;",
+				"\tborder:2xp solid #aaa;",
+				"\tmargin:8xp 0xp;",
+				"\toutline:nano;",
+				"\tpadding:8px;",
+				"\tbox-sizing:border-box;",
+				"\ttransition:3s;",
+				"\tpadding-left: 40px;",
+				"}",
+				"${2:Punto}inputText:focus{ /* Clase  */",
+				"\tborder-color:dodgerblue;",
+				"\tbox-shadow:0 0 8px 0 dodgerblue;",
+				"\tbackground-color: rgba(143, 216, 238, 0.671)",
+				"}",
+				"${3:Punto}inputWithIcon{ /* Clase para Div de los Input con Iconos */",
+				"\tposition:relative;",
+				"\tmargin: 8px 0;",
+				"}",
+				"${4:Punto}inputWithIcon i{ /* Clase Posicionar lo i */",
+				"\tposition:absolute;",
+				"\tleft: 0;",
+				"\ttop: 8px;",
+				"\tpadding:9px 8px;",
+				"\tcolor: #aaa;",
+				"\ttransition: 3s;",
+				"}",
+				"${5:Punto}inputText + i{ /* Clase Posicionar lo i */",
+				"\tcolor:dodgerblue;",
+				"}"
+			],
+			"description": "Crea las Clases para Input con Iconos."
+		}  
+		"Slider de Imagenes": {
+			"prefix": "slider_Img",
+			"body": [
+				"/* INICIO - SLIDER DE IMAGENES */",
+				".slider_Img{ ",
+				"\twidth: 95%;",
+				"\theight: 160px;",
+				"\tmargin: auto; /* Centrar */",
+				"\toverflow: hidden; /* Oculta los Elementos que se salen */",
+				"}",
+				".slider_Img ul {",
+				"\tdisplay: flex; /* Posiciona de forma horizontal */",
+				"\tpadding: 0;",
+				"\twidth: 400% /* Porque son 4 Imagenes */;",
+				"\t/* animacion */",
+				"\t  animation: animacion-cambio 20s infinite;",
+				"\t  animation-direction: alternate; /*llegue al 100% se devuelve*/",
+				"\t  animation-timing-function: linear; /* La curva de la animacion */",
+				"}",
+				".slider_Img li {",
+				"\tlist-style: none;",
+				"}",
+				".slider_Img img {",
+				"\twidth: 100%;",
+				"\theight: 60%;",
+				"}",
+				"/* Las paradas con los keyfrens */",
+				"@keyframes animacion-cambio {",
+				"\t0% {margin-left: 0;} 20% {margin-left: 0;}",
+				"\t25%{margin-left: -100%;} 45%{margin-left: -100%;}",
+				"\t50%{margin-left: -200%;} 70%{margin-left: -200%;}",
+				"\t75%{margin-left: -300%;} 100%{margin-left: -300%;}",
+				"}",
+				"\t/* FIN DEL SLIDER DE IMAGEN */"
+			],
+			"description": "Crea las Clases para el Slider de Imagen."
+		}  
+		"Clase_Recorta_Img": {
+			"prefix": "contenedor-trazado",
+			"body": [
+				"/* CLIC PACH IMAGEN RECORTADA */",
+				".contenedor-trazado{",
+				"\tposition: relative;",
+				"}",
+				".contenedor-trazado p{",
+				"\tdisplay: none;",
+				"\tposition: absolute;",
+				"\tbottom: 0;",
+				"}",
+				".contenedor-trazado img{",
+				"\tmax-width: 100%;",
+				"\theight: 150px;",
+				"\t/*==Recorta con Clic Pacht==*/",
+				"\t/* clip-path: inset(0 10% 15% 0) ;Recorta en sentido Horario */",
+				"\tclip-path: circle(35% at center);",
+				"\t/* clip-path: circle(90px at 70px 60px); */",
+				"\t/* Elipse */",
+				"\t/* clip-path: ellipse(60% 30% at center); */",
+				"\t/* clip-path: polygon(0 0, 100% 0, 0 100%); */",
+				"}"
+			],
+			"description": "Crea las Clases Recortar la imagen."
+		}  
+		"cajaImgUno-filtros1": {
+				"prefix": "cajaImgUno",
+				"body": [
+					"/* IMAGEN CON FILTRO */",
+					".cajaImgUno{",
+					"\tbackground: #faf9f9;",
+					"\twidth: 30%;/* Se ajusta al Contenedor */",
+					"\theight: 20px;",
+					"}",
+					".img-container{",
+					"\twidth: 100%;",
+					"\theight: auto;",
+					"\tmargin: 0;",
+					"\tpadding: 0;",
+					"\tposition: relative;",
+					"}",
+					".img-container::before{",
+					"\tcontent: '';",
+					"\tposition: absolute;",
+					"\ttop: 0;",
+					"\tleft: 0;",
+					"\theight: 100%;",
+					"\twidth: 100%;",
+					"\tz-index: 20;/* Superpone por ensima de la imagen */",
+					"}",
+					".img-reponse{",
+					"\twidth: 100%;",
+					"\theight: auto;",
+					"\tz-index: 10;/* Para que la img este debajo del Filtro Before */",
+					"}",
+					".filtro-1::before{",
+					"\t background-image: radial-gradient(rgb(51, 15, 214),rgb(29, 8, 146));",
+					"\topacity: 0.33;",
+					"}"
+				],
+				"description": "Crea las clases para los filtros."
+			}
+        "Clase imagen fondo": {
+					"prefix": "imagen-fondo",
+					"body": [
+						"/* IMAGEN FONDO */",
+						".imagen-fondo{",
+						"\tbackground-image: url(../img/slider3.jpg);/* Llama a al Imagen */",
+						"\twidth: 100%;",
+						"\theight: 100px;",
+						"\tbackground-size: contain;/* Expande la imagen */",
+						"\tposition: relative;",
+						"\tdisplay: flex;/* hace flexible los elementos */",
+						"\tflex-direction: column;/* Se vuele Columnas */",
+						"\tjustify-content: center;/* Centra todo su contenido */",
+						"\talign-items: center;/* Centra de forma horizontal */",
+						"}",
+						".imagen-fondo::before{",
+						"\tcontent: '';",
+						"\twidth: 100%;",
+						"\theight: 100px;",
+						"\tposition: absolute;",
+						"\tbackground-color:black;",
+						"\topacity: 0.75;",
+						"}",
+						".imagen-fondo h1,h2,h3,h4,h5,h6{",
+						"\tposition: relative;",
+						"}",
+						".imagen-fondo h1{",
+						"\tfont-size: 60px;",
+						"\tfont-family: inherit;",
+						"\ttext-align: center;",
+						"\tcolor: white;",
+						"}",
+						".imagen-fondo h4{",
+						"\tfont-size: 25px;",
+						"\tfont-family: inherit;",
+						"\ttext-align: center;",
+						"\tcolor: white;",
+						"\twidth: 60%;",
+						"}",
+						".imagen-fondo h3{",
+						"\tfont-size: 20px;",
+						"\tfont-family: inherit;",
+						"\ttext-align: center;",
+						"\tcolor: white;",
+						"\twidth: 60%;",
+						"}",
+						".imagen-fondo h3 a:visited{",
+						"\tcolor: white;",
+						"}"
+
+					],
+					"description": "Crea la Clase de fonod Imagen"
+				}
+        "Clase Boton Joserafa": {
+					"prefix": "boton_joserafa",
+					"body": [
+						"/* BOTONES JOSERAFA */",
+						".boton{",
+						"\tcolor: #fff;",
+						"\tdisplay: inline-block;/* Se pono uno al lado del otro */",
+						"\tfont-size: 1.25em;",
+						"\tmargin: 10px;",
+						"\tpadding: 10px 0px;",
+						"\ttext-align: center;",
+						"\ttext-decoration: none;/* Quita el sub-brayado */",
+						"\tbox-shadow: 0px 3px 0px #373c3c;",
+						"}",
+						".boton i{",
+						"\tmargin-right: 10px;",
+						"}",
+						".boton.azul{",
+						"\tbackground: #3498bd;",
+						"\tbox-shadow: 0px 3px 0px #233792;",
+						"}",
+						".boton.naranja{",
+						"\tbackground: #fc6119;",
+						"\tbox-shadow: 0px 3px 0px #5c2c0b;",
+						"}",
+						".boton.verde{",
+						"\tbackground: #10e260;",
+						"\tbox-shadow: 0px 3px 0px #075a23;",
+						"}",
+						".boton.amarillo{",
+						"\tbackground: #f2ff36;",
+						"\tbox-shadow: 0px 3px 0px #705c02;",
+						"\tcolor: blue;",
+						"}",
+						".boton.rojo{",
+						"\tbackground: #eb0808;",
+						"\tbox-shadow: 0px 3px 0px #300101;",
+						"\tcolor: rgb(253, 253, 253);",
+						"}",
+						".boton.negro{",
+						"\tbackground: #3d3a3a;",
+						"\tbox-shadow: 0px 3px 0px #111010;",
+						"\tcolor: rgb(253, 253, 253);",
+						"}",
+						".boton.vinotinto{",
+						"\tbackground: #680404;",
+						"\tbox-shadow: 0px 3px 0px #1b0101;",
+						"\tcolor: rgb(253, 253, 253);",
+						"}",
+						".boton.blanco{",
+						"\tbackground: #f7f4f4;",
+						"\tbox-shadow: 0px 3px 0px #adadad;",
+						"\tcolor: blue;",
+						"}",
+						"/* TAMAÑOS:mini,pequeño,medio,largo,extralargo */",
+						".boton.mini{",
+						"\twidth: 10%;",
+						"}",
+						".boton.pequeño{",
+						"\twidth: 25%;",
+						"}",
+						".boton.medio{",
+						"\twidth: 35%;",
+						"}",
+						".boton.largo{",
+						"\twidth: 50%;",
+						"}",
+						".boton.extralargo{",
+						"\twidth: 75%;",
+						"}",
+						".boton.radio{",
+						"\tborder-radius: 50px;",
+						"}",
+						".boton:hover{",
+						"transform: scale(1.025);/* Escala Reducida, 1=Tamaño Real */",
+						"}",
+						".boton:active{",
+						"\tbox-shadow: 0px 0px 0px;",
+						"\tpadding: 9px;",
+						"\ttext-decoration: none;",
+						"}"
+
+					],
+					"description": "Crea la Clase de Botones Joserafa"
+				}
+		}
