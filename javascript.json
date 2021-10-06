@@ -279,4 +279,50 @@
 		],
 		"description": "If Anidado con Dos opciones"
 	}
+	/* MAS SNIPPEST */
+	"Crea Cookie": {
+		"prefix": "cookie_joserafa",
+		"body": [
+			"creaCookie('username', 'Jose Rafael Jimenez');",
+			"function leerCookie(nombreCookie) {",
+			" /* Devuelve el Valor o False */",
+			" miscookies = document.cookie;",	
+			" arrayCookies = miscookies.split(';'); /* Convierte cadena de texto a Array */",
+			" var valor = false;",
+			" for (i in arrayCookies) {",
+			"   /* For para buscar en Arreglo */",
+			"   busca =",
+			"     arrayCookies[i].search(nombreCookie); /* funcion search devuele -1 */",
+			"   if (busca > -1) {",		"     const micookie = arrayCookies[i];",
+			"     arrayValor = micookie.split('='); /* Extrae solo el Valor */",
+			"     valor = arrayValor[1];",
+			"   }",	
+			" }",
+			" return valor;",
+			"}",
+			"function creaCookie(nuevoCookie, nuevoValor) {",
+			" const dato = nuevoCookie + '=' + nuevoValor;",
+			" document.cookie = dato;",
+			"}",
+			"function modificaCookie(Cookie, Valor) {",
+			" miscookies = document.cookie;",
+			" arrayCookies = miscookies.split(';'); /* Convierte cadena de texto a Array */",
+			" var valor = false;",
+			" for (i in arrayCookies) {",
+			"   /* For para buscar en Arreglo */",
+			"   busca = arrayCookies[i].search(Cookie); /* funcion search devuele -1 */",
+			"   if (busca > -1) {",
+			"     const dato = Cookie + '=' + Valor;",
+			"     document.cookie = dato;",
+			"     return true;",
+			"   }",	
+			" }",
+			" return valor;",
+			" /* ------------------------ */",
+			"}"
+		],
+		"description": "Crea Tes funciones,leer,Crear,modificar Cookies."
+	}
+	
+
 }
