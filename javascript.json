@@ -323,6 +323,78 @@
 		],
 		"description": "Crea Tes funciones,leer,Crear,modificar Cookies."
 	}
-	
+	"date del Sistema": {
+		"prefix": "date_joserafa",
+		"body": [
+			"function devuelveDia() {",
+			" const diaSemana = new Date().getDay(); /* Captura Num Dia del Sistema.  */",
+			" let dias = [",
+			"   'Domingo',",
+			"   'lunes',",
+			"   'Martes',",
+			"   'Miercoles',",
+			"   'Jueves',",
+			"   'Viernes',",
+			"   'Sabado',",
+			" ];",
+			" for (let i = 0; i < dias.length - 1; i++) {",
+			"   if (i == diaSemana) {",
+			"     return `El dia es: ${dias[i]} `;",
+			"   }",
+			" }",
+			"}",
+			"function devuelveFecha() {",
+			" const dia = new Date().getDate();",
+			" const mes = new Date().getMonth();",
+			" const ano = new Date().getFullYear();",
+			" return ` ${ano} /${mes + 1} / ${dia}`;",
+			"}",
+			"function devuelveHoraSistema() {",
+			" const hora = new Date().getHours(); /* Captura hora del sistema. */",
+			" const minutos = new Date().getUTCMinutes();",
+			" const segundos = new Date().getSeconds();",
+			" return `hora Sistema Actual:  ${hora} : ${minutos + 1} : ${segundos + 1}`;",
+			"}"
+		],
+		"description": "Crea tres funciones que Devuelven la fecha,dia,hora"
+	}
+
+	"Color de Fondo en Css por JavaScrip": {
+		"prefix": "colorFondo_joserafa",
+		"body": [
+			"function cambiaColorFondoPorHora() {",
+			" /* Modifica el Color segun la hora */",
+			" /* NOTA: requere crear en Css Variables Glogales */",
+			" console.log(devuelveHoraSistema());",
+			" let hora = new Date().getHours();",
+			" let mensaje;",
+			" let estilo;",
+			" const pagina = document.documentElement.style;",
+			" // hora=24;",
+			" if (hora < 5) {",
+			"   mensaje = 'Buen Madrugada';",
+			"   pagina.setProperty('--ColorFondo', '#1b1b1b');/* Variable Global en Css. */",
+			"   pagina.setProperty('--ColorTexto', '#1a9cd8');",
+			"   estilo = 'manana';",
+			" } else if (hora < 12) {",
+			"   mensaje = 'Buenas Day';",
+			"   pagina.setProperty('--ColorFondo', 'white');/* Variable Global en Css. */",
+			"   pagina.setProperty('--ColorTexto', 'blue');",
+			"   estilo = 'noche';",
+			" } else if (hora < 18) {",
+			"   mensaje = 'Buenas Tardes Señor';",
+			"   pagina.setProperty('--ColorFondo', 'grey');/* Variable Global en Css. */",
+			"   pagina.setProperty('--ColorTexto', 'blue');",
+			"   estilo = 'tarde';",	
+		" } else if (hora < 24) {",
+			"   mensaje = 'Buenas Noches Señor';",
+			"   pagina.setProperty('--ColorFondo', 'black');/* Variable Global en Css. */",
+			"   pagina.setProperty('--ColorTexto', 'white');",
+			"   estilo = 'noche';",
+			" }",
+			"}",
+		],
+		"description": "Crea una Función que Cambia el Fondo y texto de la pagina"
+	}
 
 }
