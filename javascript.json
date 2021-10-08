@@ -392,9 +392,176 @@
 			"   pagina.setProperty('--ColorTexto', 'white');",
 			"   estilo = 'noche';",
 			" }",
-			"}",
+			"}"
 		],
 		"description": "Crea una Función que Cambia el Fondo y texto de la pagina"
 	}
-
+	"CuentaLosDias_Joserafa": {
+		"prefix": "cuentaDias_jr",
+		"body": [	
+		"/* CUENTA REGRESIVA PARA EVENTO. */",
+			"function cuentaDias(ano,mes,dia,nombreEvento) {",
+			" const hoy = new Date();",
+			" const milSegEnUnDia = 1000*60*60*24;//Milisegundo en un Dia",
+			" hoy.setHours(0,0,0,0,);",
+			" const fechaEvento = new Date(ano,mes -1,dia);",
+			" const diferenciaHoras  = Math.abs(fechaEvento.getTimezoneOffset()/60)-Math.abs(hoy.getTimezoneOffset()/60);",
+			" hoy.setHours(hoy.getHours()-diferenciaHoras);",	
+		" if (fechaEvento>hoy) {",
+			"   return`falta ${(fechaEvento.getTime()-hoy.getTime())/milSegEnUnDia} Dias para ${nombreEvento}`;",
+			" }else{",
+			"   return 'La Fecha ya Pasò'",
+			" }",
+			"}",
+			"//console.log(cuentaDias(2041,11,10,'Cumple de Graciela'));"
+		],
+		"description": "Crea Función con cuenta Regresiva de Evento"
+	}
+	"oyente con listener": {
+		"prefix": "oyente",
+		"body": [
+			"/* ",
+			"onchange = Verifica cuando un elemento html se modifica",
+			"onclick = Verifica cuando el usuario hace click sobre el elemento html",
+			"onmouseover = Verifica cuando pasa el raton por enciama del elemnto html",
+			"onmouseout = Verifca cuneo el raton se mueve fuera del elemento html",
+			"onkeydown = Verifica cunado usuario pulsa una tecla del teclado",
+			"onload = verifica cuando el navegador termina de cargar la pagina",
+			"ondragover = verifica cundo se enpieza a arrastrar un elemento html",
+			"ondrop = verifica cuando se libera un E.html tras haver arrastrado.",
+			"*/",
+			"document.getElementById('boton_Uno').addEventListener('mouseover', function () {",
+			"console.log('Haz hecho Click');",
+			"alert('Haz hecho click ahora.');",
+			"});"
+		],
+		"description": "Crea un metodo oyent con addListener para E.html"
+	}
+"Arreglo_var_rafa": {
+		"prefix": "array_v",	"body": [
+			"var ${1:Nombre} = ['${2:uno}','${3:dos}','${4:tres}']; ",	],
+		"description": "Crea un estructura de Arreglo"
+	}
+	"foreach_completo": {
+		"prefix": "foreach_Completo_joserafa",
+		"body": [
+			"/* FOR INTELIGENTE PARA ARRAYS COMPLETO*/",
+			"${1:Array}.forEach(function (elemento,indice,array) {",
+			"\tconsole.log(`indice:${ indice } - ${ elemento }`);",
+			"});"
+		],
+		"description": "Crea un ForEach Completo,Para trabajar con Array"
+	}
+	"foreach_simple_joserafa": {
+		"prefix": "foreach_Simple_joserafa",
+		"body": [
+			"/* FOR INTELIGENTE PARA ARRAYS SIMPLE*/",
+			"${1:Array}.forEach(dato => console.log(dato));"
+		],
+		"description": "Crea un ForEach Completo,Para trabajar con Array"
+	}
+	"ArrayAsociativo_joserafa": {
+		"prefix": "array_Asocia",
+		"body": [
+			"let ${1:ArrayObjeto} = {",
+			"\t'${2:clave}':'${3:valor}',",
+			"\t'${4:clave}':'${4:valor}',",
+			"};",
+		],
+		"description": "Crea un Arreglo Asociado como Objeto"
+	}
+	"ForIn_ArrayAso_joserafa": {
+		"prefix": "for_In",
+		"body": [
+			"for (const k in ${1:ArrayAsociativo}) {",
+			" console.log(`${ k }: ${ ${1:Array}[k]}`);",
+			"}",
+		],
+		"description": "Crea un for para Array Asociativos"
+	}
+	"XmlHttpRequest_Local_joserafa": {
+		"prefix": "httpRequest_Local",
+		"body": [
+			"/* XMLHTTPREQUEST LOCAL */",
+			"'use strict';",
+			"const file = '${1:ArchivoJson}.json';",
+			"const request = new XMLHttpRequest();",
+			"request.overrideMimeType('application/json'); //Local",
+			"request.open('GET', file, true);",
+			"request.onload = function () {",
+			"\t var dato = JSON.parse(request.responseText);",
+			"\t var HTML = '';",
+			" for (var i = 0; i < dato.${2:ObjetoBuscar}.length; i++) {",
+			"   var n_telefonos = ''; //Es un Arreglo de Objetos Sub-Busqueda",
+			"   for (var j = 0; j < dato.${2:ObjetoBuscar}[i].telefonos.length; j++) {",
+			"     n_telefonos += ` ${dato.${2:ObjetoBuscar}[i].telefonos[j].tipo}:",
+			"                               ${dato.${2:ObjetoBuscar}[i].telefonos[j].numero}/`;",
+			"   } //direccion",
+			"   HTML += `<div class='book-card ' ><h4>Nombe: ${dato.${2:ObjetoBuscar}[i].nombre} Apellido:${dato.${2:ObjetoBuscar}[i].apellido}",
+			"       Dir:${dato.${2:ObjetoBuscar}[i].direccion.calle},",
+			"       ${dato.${2:ObjetoBuscar}[i].direccion.poblacion},",
+			"       ${dato.${2:ObjetoBuscar}[i].direccion.provincia}-",
+			"       Contacto:(${ n_telefonos})</h4></div>`;",
+			"   muestraResultado(HTML);",
+			" }",
+			"};",
+			"request.onerror = (error) => muestraResultado(`<pre>ERROR: ${error} <pre>`);",
+			"request.send();",
+			"const muestraResultado = (texto) =>",
+			" (document.getElementById('output').innerHTML = texto);",
+		],
+		"description": "Crea objeto  Request para llamada Local."
+	}
+	"AjaxEnviaServidor_joserafa": {
+		"prefix": "httpRequest_Servidor",
+		"body": [
+			"//PETICION ASINCRONA A SERVIDOR DE PRUEBA",
+			"function ajaxEnviaServidor() {",
+			" const urlServicio = 'https://jsonplaceholder.typicode.com/users';",
+			" const request = new XMLHttpRequest();",
+			" request.open('POST', urlServicio);",
+			" request.setRequestHeader('Content-type', 'application/json; charset=UTF-8');",
+			" request.onload = function () {",
+			"\tconsole.log(`Resp: estado${this.status} descri estado=${this.statusText} ",
+			"\tcontenido=${this.responseText} `);",
+			" };",
+			" request.onerror = function (error) {",
+			"\tconsole.err(`ERROR: ${error}`);",
+			" };",
+			" console.log('Solicitud Completada');",
+			" const nuevoUsuario = {",
+			"\tname: 'JOse Rafael Jimenz',",
+			"\tusername: 'Joserafa78',",
+			"\temail: 'jose.rafael@gmail.com',",
+			"};",
+			"request.send(JSON.stringify(nuevoUsuario));",
+			"console.log('Envia Solicitud');",
+			"}",
+		],
+		"description": "Crea funcion que envia peticion Asincrona a Servidor Prueba."
+	}
+	"httpRequestLocalTexto": {
+		"prefix": "httpRequest_LocalTexto",
+			"body": [
+			"function  ejecutarAJAX(){",
+			"   //--PETICION DE ARCHVO TEXTO EN LOCA--",
+			"   //0 Peticion no a sido Inicializada",
+			"   //1 Peticion ha sido establecida",
+			"   //2 Peticion ha sido enviada",
+			"   //3 Peticion esta siendo Procesada",
+			"   //4 Peticion ha sido finalizada",
+			"   var ajaxRequest = new XMLHttpRequest();",
+			"   var archivo = 'documento.txt';",	
+		"   ajaxRequest.onreadystatechange = function() {",
+			"\t\tconsole.log(ajaxRequest.status);",
+			"if (ajaxRequest.readyState==4 && ajaxRequest.status==200 ){",
+			"\t document.getElementById('info').innerHTML= ajaxRequest.responseText;",
+			"}",
+			" }",
+			"ajaxRequest.open('GET',archivo,true);//Peticion Asincrona.",
+			"ajaxRequest.send();",
+			"}",
+		],
+		"description": "Crea función que trae archivo Texto Local"
+	}
 }
