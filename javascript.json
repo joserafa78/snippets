@@ -480,7 +480,7 @@
 		"description": "Crea un for para Array Asociativos"
 	}
 	"XmlHttpRequest_Local_joserafa": {
-		"prefix": "httpRequest_Local",
+		"prefix": "httpRequ_Local",
 		"body": [
 			"/* XMLHTTPREQUEST LOCAL */",
 			"'use strict';",
@@ -513,7 +513,7 @@
 		"description": "Crea objeto  Request para llamada Local."
 	}
 	"AjaxEnviaServidor_joserafa": {
-		"prefix": "httpRequest_Servidor",
+		"prefix": "httpRequ_Servidor",
 		"body": [
 			"//PETICION ASINCRONA A SERVIDOR DE PRUEBA",
 			"function ajaxEnviaServidor() {",
@@ -541,7 +541,7 @@
 		"description": "Crea funcion que envia peticion Asincrona a Servidor Prueba."
 	}
 	"httpRequestLocalTexto": {
-		"prefix": "httpRequest_LocalTexto",
+		"prefix": "httpRequ_LocalTexto",
 			"body": [
 			"function  ejecutarAJAX(){",
 			"   //--PETICION DE ARCHVO TEXTO EN LOCA--",
@@ -563,5 +563,53 @@
 			"}",
 		],
 		"description": "Crea función que trae archivo Texto Local"
+	}
+	"httpReques_Local_Analza": {
+		"prefix": "httpRequ_Local_Ajax",
+		"body": [
+			"/* AJAX Extrae y analaiza  Archivo local de texto. */",
+			"function ajax_get_json() {",
+			"var resultado = document.getElementById('info');",
+			"let bandera = 0;",
+			"var archivo='Arraydatos.json';",
+			"   var xmlhttp;",
+			"   if (window.XMLHttpRequest) {",
+			"       xmlhttp = new XMLHttpRequest();",
+			"   } else {",
+			"       xmlhttp = new ActiveXObject('Mricrosoft.XMLHTTP');",		"   }",
+			"   xmlhttp.onreadystatechange = function () {",
+			"       if (xmlhttp.readyState === 4 && xmlhttp.status === 200) { //si la pe",
+			"           var datos = JSON.parse(xmlhttp.responseText); //conviete cadena a objeto json",
+			"           if (bandera === 0) {",
+			"               for (var i in datos) {",
+			"                  if(datos[i].edad<=18){",
+			"                       resultado.innerHTML += datos[i].nombre + ' ' + datos[i].apellido + ' Tiene:' +",
+			"                           datos[i].edad + '<hr/>';",
+			"                       bandera = 1;",	
+			"    }",
+			"               }",
+			"           }",
+			"       }",
+			"   }",
+			"   xmlhttp.open('GET', archivo, true);",	
+			"   xmlhttp.send();",	
+			"}",
+		],
+		"description": "Crea función que trae Archivo loca y lo analiza"
+	}
+	"Crea Nuevo Nodo ": {
+		"prefix": "creaNodo_joseRafa",
+		"body": [
+			"function creaNuevoNodo(idNodoPadre,nueveElementHtml,texto,atribut,valoratrb) {",
+			" let elemntOpcion = document.createElement(nueveElementHtml);/* Crea el Nodo del tipoHtml */",
+			" let contenido = document.createTextNode(texto);/* Crea el Nodo tipo Contendio */",
+			" elemntOpcion.appendChild(contenido);/* Agrega el Contenido al NodoHtml */",
+			" let Nuevoatributo = document.createAttribute(atribut) ;/* Crea el Atributo del elemento html,id,value.. */",
+			"  Nuevoatributo.value=valoratrb; /* Asigna el Valor al Atributo */",
+			" elemntOpcion.setAttributeNode(Nuevoatributo);/* Asigna el Atributo al Element html */",
+			" document.getElementById(idNodoPadre).appendChild(elemntOpcion);/* Crea el elemento en el Dom */",
+			"}",
+		],
+		"description": "Funcion que Crea un nuevo nodo en javascrit"
 	}
 }
