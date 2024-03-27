@@ -324,5 +324,24 @@
 				"</a>"
 			],
 			"description": "Crea Botones Personalizados Joserafa."
-		}
+		},
+				"if":{
+			"prefix": "if",
+			"body": [
+				"<?php if($1): ?>",
+				"\t$2",
+				"<?php else: ?>",
+				"\t$3",
+				"<?php endif; ?>"
+			],
+			"description": "if php tag HTML"
+		},
+		"php_HTML":{
+			"prefix": "php",
+			"body": [
+				"<?= $1 ?>",
+	
+			],
+			"description": "PHP -Practico."
+		},
 	}
