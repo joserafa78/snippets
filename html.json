@@ -325,7 +325,7 @@
 			],
 			"description": "Crea Botones Personalizados Joserafa."
 		},
-				"if":{
+		"if":{
 			"prefix": "if",
 			"body": [
 				"<?php if($1): ?>",
@@ -343,5 +343,33 @@
 	
 			],
 			"description": "PHP -Practico."
+		},
+		"For Loop": {
+			"prefix": "for",
+			"body": [
+				"<?php for ($$i = ${1}; $$i ${2}; $$i${3}): ?>",
+				"\t${4}",
+				"<?php endfor; ?>"
+			],
+			"description": "This is a for loop made with php. Made by: Toni B. Lopez."
+		},
+		"foreach": {
+			"prefix": "foreach",
+			"body": [
+				"<?php foreach ($$array${1} as $$index => $$value): ?>",
+				"\t${4}",
+				"<?php endforeach; ?>"
+			],
+			"description": "foreach loop"
+		},
+	
+		"while": {
+			"prefix": "while",
+			"body": [
+				"<?php while ($$i < ${1}): ?>",
+				"\t${4}",
+				"<?php endwhile; ?>"
+			],
+			"description": "while loop"
 		},
 	}
