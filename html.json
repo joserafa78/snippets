@@ -19,7 +19,7 @@
 				"$5"
 			],
 			"description": "Input tipo Texto"
-		}
+		},
 		"input Passwor": {
 			"prefix": "inp_Password",
 			"body": [
@@ -27,7 +27,7 @@
 				"$4"
 			],
 			"description": "Input tipo Clave"
-		}
+		},
 		"input Telefono": {
 			"prefix": "inp_Telefono",
 			"body": [
@@ -35,7 +35,7 @@
 				"$5"
 			],
 			"description": "Input tipo Telefno"
-		}
+		},
 		"input Email": {
 			"prefix": "inp_Email",
 			"body": [
@@ -43,7 +43,7 @@
 				"$5"
 			],
 			"description": "Input tipo Email"
-		}
+		},
 		"input Color": {
 			"prefix": "inp_Color",
 			"body": [
@@ -51,7 +51,7 @@
 				"$3"
 			],
 			"description": "Input tipo Paleta de Color"
-		}
+		},
 		"input Fecha": {
 			"prefix": "inp_Fecha",
 			"body": [
@@ -59,7 +59,7 @@
 				"$3"
 			],
 			"description": "Input tipo Fecha"
-		}
+		},
 		"input Numero": {
 			"prefix": "inp_Numero",
 			"body": [
@@ -67,7 +67,7 @@
 				"$5"
 			],
 			"description": "Input tipo Numero"
-		}
+		},
 		"input Url": {
 			"prefix": "inp_Url",
 			"body": [
@@ -75,7 +75,7 @@
 				"$5"
 			],
 			"description": "Input tipo url"
-		}
+		},
 		"input Rango": {
 			"prefix": "inp_Rango",
 			"body": [
@@ -84,7 +84,7 @@
 				"Max</label>"
 			],
 			"description": "Input tipo Rango"
-		}
+		},
 	"input button": {
 			"prefix": "inp_button",
 			"body": [
@@ -92,7 +92,7 @@
 				"$6"
 			],
 			"description": "Input tipo Boton"
-		}
+		},
 	"input Imagen": {
 			"prefix": "inp_Imagen",
 			"body": [
@@ -100,7 +100,7 @@
 				"$6"
 			],
 			"description": "Input tipo Boton de Imagne"
-		}
+		},
 		"input Checkbox": {
 			"prefix": "inp_chekbox",
 			"body": [
@@ -108,7 +108,7 @@
 				"<label for='$1'> ${2:Mostrar}</label>"
 			],
 			"description": "Input tipo Checkbox"
-		}
+		},
 		"input RadioBox": {
 			"prefix": "inp_radiobox",
 			"body": [
@@ -116,7 +116,7 @@
 				"<label for='$1'> ${3:Mostrar}</label>"
 			],
 			"description": "Input tipo Checkbox"
-		}
+		},
 		"input DataLista": {
 			"prefix": "inp_datalist",
 			"body": [
@@ -126,14 +126,15 @@
 				"</datalist>"
 			],
 			"description": "Input tipo Checkbox"
-		}	"input File": {
+		},
+			"input File": {
 			"prefix": "inp_file",
 			"body": [
 				"<label for='${1:Nombre}'> ${2:Mostrar}</label>",
 				"<input type='file' id='$1' name='$1' accept='image/png,image/jpg'>"
 			],
 			"description": "Input tipo Archivo"
-		}
+		},
 		
 		"input hiddden": {
 			"prefix": "inp_hidden",
@@ -142,7 +143,7 @@
 				"<input type='hidden' id='${1:nombre}' name='$1' value=''>"
 			],
 			"description": "Input tipo Dato Oculto"
-		}
+		},
 		"input Iconos Fontasoe": {
 			"prefix": "inp_iconos_fontasowe",
 			"body": [
@@ -154,7 +155,7 @@
 				"</div>"
 			],
 			"description": "Input tipo Dato Oculto"
-		}
+		},
 	
 	"munu": {
 	"input Reset": {
@@ -164,7 +165,7 @@
 				"$5"
 			],
 			"description": "Input tipo REseteo"
-		}
+		},
 	"input submit": {
 			"prefix": "inp_submit",
 			"body": [
@@ -172,21 +173,21 @@
 				"$5"
 			],
 			"description": "Input tipo REseteo"
-		}
+		},
 	"munu": {
 			"prefix": "menu",
 			"body": [
 				"ul>li*${1:Cantidad}>a[href='#']{opcion}"
 			],
 			"description": "Crea menu desde EMME"
-		}
+		},
 	"select": {
 			"prefix": "cuadro_combinado",
 			"body": [
 				"select>option*${1:Cantidad}"
 			],
 			"description": "Cuadro Combinado"
-		}
+		},
 	"cuadro lista": {
 			"prefix": "cuadro_lista",
 			"body": [
@@ -200,7 +201,7 @@
 				"table>(tr*${1:Filas}>td*${2:Columnas})"
 			],
 			"description": "Crea Tabla Nueva."
-		}
+		},
 		"form_N": {
 			"prefix": "form_n",
 			"body": [
@@ -214,7 +215,7 @@
 				"</form>"
 			],
 			"description": "Crea Formulario."
-		}
+		},
 		"link _BootsrapLocal": {
 			"prefix": "link_bootstrap_Local",
 			"body": [
@@ -222,7 +223,7 @@
 				"<link rel='stylesheet' href='cssbootstrap/bootstrap.css' />"
 			],
 			"description": "Crea link para Conectar Bootstrap Css Local."
-		}
+		},
 		"link _fontasome": {
 			"prefix": "link_fotasome_Local",
 			"body": [
@@ -230,7 +231,7 @@
 				"<link rel='stylesheet' href='css-fontasowe/all.min.css' />"
 			],
 			"description": "Crea link para Conectar Fotasowe Css Local."
-		}
+		},
 		"script _BootsrapLocal": {
 			"prefix": "script_bootstrap_Local",
 			"body": [
@@ -240,7 +241,7 @@
 				"<script type='text/javascript' src='jsbootstrap/popper.min.js'></script>"
 			],
 			"description": "Crea Script para Conectar Bootstrap Css Local."
-		}
+		},
 		
 		"link _Icono": {
 			"prefix": "link_Icono",
@@ -248,7 +249,7 @@
 				"<link rel='icon' type='image/png' href='img/iconoPrincipal.png' />"
 			],
 			"description": "Crea link para Insertar Icono Superior."
-		}
+		},
 		"regillas_Bootstrap": {
 			"prefix": "regilla_bootstrap",
 			"body": [
@@ -260,11 +261,11 @@
 				"</div>"
 			],
 			"description": "Crea link para Insertar Icono Superior."
-		}
+		},
 		"Slider_Imagenes": {
 			"prefix": "slider_img",
 			"body": [
-				"<!--SLIDER DE IMAGEN-->"
+				"<!--SLIDER DE IMAGEN-->",
 				"<div class='slider_Img'> <!-- NOTA:Buscar Clase en Css 'slider_Img' -->",
 				"\t<ul>",
 				"\t\t<li><img src='img/slider1.jpg' alt=""></li>",
@@ -276,22 +277,22 @@
 				
 			],
 			"description": "Crea un Slider de 4 imagenes forma horizontal."
-		}
+		},
 		"Imagen_Recortadas": {
 			"prefix": "img_recortadas",
 			"body": [
-				"<!--<!-- Clip-path -->-->"
+				"<!--<!-- Clip-path -->-->",
 				"<div class='contenedor-trazado'> <!--Nota:Buscar clase contenedor-trazado-->",
 				"\t<img src='img/slider2.jpg' alt=''>",
 				"\t<p>Titulo del al Imagen</p>",
 				"</div>"
 			],
 			"description": "recorta imagen con clip-pach."
-		}
+		},
 		"Imagen_con_Filtro_Uno": {
 			"prefix": "img_Filtro_1",
 			"body": [
-				"<!-- Imagen con Filtro -->"
+				"<!-- Imagen con Filtro -->",
 				"<div class='cajaImgUno'><!-- Nota:Buscar en Css 'cajaImgUno' -->",
 				"\t<figure class='img-container filtro-1'>",
 				"\t\t<img src='img/slider4.jpg' alt='' class='img-reponse'>",
@@ -299,11 +300,11 @@
 				"</div>"
 			],
 			"description": "Crea un filtro 1 en la Imagen."
-		}
+		},
 		"Imagen_Fondo_innovador": {
 			"prefix": "img_Fondo_Innov",
 			"body": [
-				" <!-- IMAGEN FONDO -->"
+				" <!-- IMAGEN FONDO -->",
 				"<div class='imagen-fondo'><!--NOTA:Buscar Clase. imagen-fondo -->",
 				"\t<h1>Diseño Innovador</h1>",
 				"\t<h4>Imagen fondo</h4>",
@@ -311,7 +312,7 @@
 				"</div>"
 			],
 			"description": "Crea un fondo de imagen innovador."
-		}
+		},
 		"Boton Jose Rafa": {
 			"prefix": "boton_joserafa",
 			"body": [
@@ -373,3 +374,4 @@
 			"description": "while loop"
 		},
 	}
+}

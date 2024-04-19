@@ -42,8 +42,9 @@
 	"prefix": "debugger",
 	"body": [
 		"echo \"<pre>\";",
-  "print_r($1);",
-  "echo \"</pre>\";"
+		"var_dump($1);",
+  "//print_r($2);",
+
 	],
 	"description": "Create a debugger structure"
 } ,

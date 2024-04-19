@@ -21,7 +21,7 @@
 				"$2"
 			],
 			"description": "Crea comentario Grande"
-		}
+		},
 		"root variables": {
 			"prefix": ":root_V",
 			"body": [
@@ -30,7 +30,7 @@
 				"}"
 			],
 			"description": "Crea la Variables Globales"
-		}
+		},
 		"FuentPersonalizada": {
 			"prefix": ":fuente_personalizasa",
 			"body": [
@@ -43,7 +43,7 @@
 				"}"
 			],
 			"description": "Crea la Variables Globales"
-		}
+		},
 		"Degradado_linial": {
 			"prefix": ":degradado_linial",
 			"body": [
@@ -52,7 +52,7 @@
 				"background: -ms-linear-gradient(left, blue 2% ,red 98%);"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"Degradado_radial": {
 			"prefix": ":degradado_radial",
 			"body": [
@@ -61,7 +61,7 @@
 				"background: -ms-radial-gradient(center,circle, blue 2% ,red 98%);"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"imagen_background": {
 			"prefix": ":imagen_background",
 			"body": [
@@ -69,14 +69,14 @@
 				" background-size:cover;/* auto,container */"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"imagen_transparente": {
 			"prefix": ":imagen_transparente",
 			"body": [
 				"background: linear-gradient(rgba(5,7,12,0.70),rgba(5,7,12,0.70)),url(img/);"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"borde_Exterior": {
 			"prefix": ":borde_exterior",
 			"body": [
@@ -84,28 +84,28 @@
 				"outline-offset: 20px; /* Distancia del borde */"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"Escala de Elementos": {
 			"prefix": ":escala_elemento",
 			"body": [
 				"transform: scale(0.78);/* Escala Reducida, 1=Tamaño Real */"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"Invertir Elementos": {
 			"prefix": ":invertir_elementos",
 			"body": [
 				"transform: scale(1,-1);/* Inversion */"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"Rotacion de Elementos": {
 			"prefix": ":rotar_elemento",
 			"body": [
 				"transform: rotate(20deg);/* rota Radiantes*/"
 			],
 			"description": "Crea un Degradado Linial"
-		}
+		},
 		"Transicion_Rotando": {
 			"prefix": ":animacion_rotando",
 			"body": [
@@ -117,7 +117,7 @@
 				"}"
 			],
 			"description": "Crea una animacion o transicion de elementos Rota."
-		}
+		},
 		"Transicion_TransladandoXY": {
 			"prefix": ":animacion_transladando_X,Y",
 			"body": [
@@ -129,7 +129,7 @@
 				"}"
 			],
 			"description": "Crea una animacion De translado en Dos Dimensiones."
-		}
+		},
 		"Transicion_TransladandoXYZ": {
 			"prefix": ":animacion_transladando_X,Y,Z",
 			"body": [
@@ -141,7 +141,7 @@
 				"}"
 			],
 			"description": "Crea una animacion De translado en Tres Dimensiones."
-		}
+		},
 		"inputTxt_clase": {
 			"prefix": "inputTxt",
 			"body": [
@@ -177,7 +177,7 @@
 				"}"
 			],
 			"description": "Crea las Clases para Input con Iconos."
-		}  
+		} , 
 		"Slider de Imagenes": {
 			"prefix": "slider_Img",
 			"body": [
@@ -214,7 +214,7 @@
 				"\t/* FIN DEL SLIDER DE IMAGEN */"
 			],
 			"description": "Crea las Clases para el Slider de Imagen."
-		}  
+		} , 
 		"Clase_Recorta_Img": {
 			"prefix": "contenedor-trazado",
 			"body": [
@@ -240,7 +240,7 @@
 				"}"
 			],
 			"description": "Crea las Clases Recortar la imagen."
-		}  
+		} , 
 		"cajaImgUno-filtros1": {
 				"prefix": "cajaImgUno",
 				"body": [
@@ -277,7 +277,7 @@
 					"}"
 				],
 				"description": "Crea las clases para los filtros."
-			}
+			},
         "Clase imagen fondo": {
 					"prefix": "imagen-fondo",
 					"body": [
@@ -330,7 +330,7 @@
 
 					],
 					"description": "Crea la Clase de fonod Imagen"
-				}
+				},
         "Clase Boton Joserafa": {
 					"prefix": "boton_joserafa",
 					"body": [
@@ -418,3 +418,4 @@
 					"description": "Crea la Clase de Botones Joserafa"
 				}
 		}
+	
