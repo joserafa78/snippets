@@ -194,7 +194,7 @@
 				"select[size='${1:Cantidad}']>(option*$1)"
 			],
 			"description": "Cuadro lista"
-		}
+		},
 		"table_N": {
 			"prefix": "table_n",
 			"body": [
