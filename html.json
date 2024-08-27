@@ -13,152 +13,148 @@
 	// 	"description": "Log output to console"
 	// }
 	"input texto": {
-			"prefix": "inp_texto",
-			"body": [
-				"<input type='text$1' id='$2' placeholder='$3' class='$4'>",
-				"$5"
-			],
-			"description": "Input tipo Texto"
-		},
-		"input Passwor": {
-			"prefix": "inp_Password",
-			"body": [
-				"<input type='password' id='$1' placeholder='$2' class='$3'>",
-				"$4"
-			],
-			"description": "Input tipo Clave"
-		},
-		"input Telefono": {
-			"prefix": "inp_Telefono",
-			"body": [
-				"<input type='tel' id='$1' placeholder='$2' class='$3' size='20$4'>",
-				"$5"
-			],
-			"description": "Input tipo Telefno"
-		},
-		"input Email": {
-			"prefix": "inp_Email",
-			"body": [
-				"<input type='email' id='$1' placeholder='$2' class='$3' size='20$4'>",
-				"$5"
-			],
-			"description": "Input tipo Email"
-		},
-		"input Color": {
-			"prefix": "inp_Color",
-			"body": [
-				"<input type='color' id='$1' Value='red$2'>",
-				"$3"
-			],
-			"description": "Input tipo Paleta de Color"
-		},
-		"input Fecha": {
-			"prefix": "inp_Fecha",
-			"body": [
-				"<input type='date' id='$1' name='red$2'>",
-				"$3"
-			],
-			"description": "Input tipo Fecha"
-		},
-		"input Numero": {
-			"prefix": "inp_Numero",
-			"body": [
-				"<input type='number' id='$1' name='red$2'min='$3' max='$4'>",
-				"$5"
-			],
-			"description": "Input tipo Numero"
-		},
-		"input Url": {
-			"prefix": "inp_Url",
-			"body": [
-				"<input type='url' id='$1' name='red$2'placeholder='$3' value='$4'>",
-				"$5"
-			],
-			"description": "Input tipo url"
-		},
-		"input Rango": {
-			"prefix": "inp_Rango",
-			"body": [
-				"<label> Min",
-				"<input type='range' id='$1' name='red$2' min='$3' max='$4'>",
-				"Max</label>"
-			],
-			"description": "Input tipo Rango"
-		},
+		"prefix": "inp_texto",
+		"body": [
+			"<input type='text$1' id='$2' placeholder='$3' class='$4'>",
+			"$5"
+		],
+		"description": "Input tipo Texto"
+	},
+	"input Passwor": {
+		"prefix": "inp_Password",
+		"body": [
+			"<input type='password' id='$1' placeholder='$2' class='$3'>",
+			"$4"
+		],
+		"description": "Input tipo Clave"
+	},
+	"input Telefono": {
+		"prefix": "inp_Telefono",
+		"body": [
+			"<input type='tel' id='$1' placeholder='$2' class='$3' size='20$4'>",
+			"$5"
+		],
+		"description": "Input tipo Telefno"
+	},
+	"input Email": {
+		"prefix": "inp_Email",
+		"body": [
+			"<input type='email' id='$1' placeholder='$2' class='$3' size='20$4'>",
+			"$5"
+		],
+		"description": "Input tipo Email"
+	},
+	"input Color": {
+		"prefix": "inp_Color",
+		"body": [
+			"<input type='color' id='$1' Value='red$2'>",
+			"$3"
+		],
+		"description": "Input tipo Paleta de Color"
+	},
+	"input Fecha": {
+		"prefix": "inp_Fecha",
+		"body": [
+			"<input type='date' id='$1' name='red$2'>",
+			"$3"
+		],
+		"description": "Input tipo Fecha"
+	},
+	"input Numero": {
+		"prefix": "inp_Numero",
+		"body": [
+			"<input type='number' id='$1' name='red$2'min='$3' max='$4'>",
+			"$5"
+		],
+		"description": "Input tipo Numero"
+	},
+	"input Url": {
+		"prefix": "inp_Url",
+		"body": [
+			"<input type='url' id='$1' name='red$2'placeholder='$3' value='$4'>",
+			"$5"
+		],
+		"description": "Input tipo url"
+	},
+	"input Rango": {
+		"prefix": "inp_Rango",
+		"body": [
+			"<label> Min",
+			"<input type='range' id='$1' name='red$2' min='$3' max='$4'>",
+			"Max</label>"
+		],
+		"description": "Input tipo Rango"
+	},
 	"input button": {
-			"prefix": "inp_button",
-			"body": [
-				"<input type='button$1' id='$2' value='$3' onclick='$4' class='$5'>",
-				"$6"
-			],
-			"description": "Input tipo Boton"
-		},
+		"prefix": "inp_button",
+		"body": [
+			"<input type='button$1' id='$2' value='$3' onclick='$4' class='$5'>",
+			"$6"
+		],
+		"description": "Input tipo Boton"
+	},
 	"input Imagen": {
-			"prefix": "inp_Imagen",
-			"body": [
-				"<input type='image$1' id='$2' src='${3:Ruta}' onclick='$4' class='$5'>",
-				"$6"
-			],
-			"description": "Input tipo Boton de Imagne"
-		},
-		"input Checkbox": {
-			"prefix": "inp_chekbox",
-			"body": [
-				"<input type='checkbox' id='${1:Nombre}'>",
-				"<label for='$1'> ${2:Mostrar}</label>"
-			],
-			"description": "Input tipo Checkbox"
-		},
-		"input RadioBox": {
-			"prefix": "inp_radiobox",
-			"body": [
-				"<input type='radio' id='${1:Nombre}' name='$1' value='${2:Valor}'>",
-				"<label for='$1'> ${3:Mostrar}</label>"
-			],
-			"description": "Input tipo Checkbox"
-		},
-		"input DataLista": {
-			"prefix": "inp_datalist",
-			"body": [
-				"<input type='text' list='${1:Nombre}' id='$2' name='$3'>",
-				"<datalist id='$1'>",
-				"<option value=''> </option>",
-				"</datalist>"
-			],
-			"description": "Input tipo Checkbox"
-		},
-			"input File": {
-			"prefix": "inp_file",
-			"body": [
-				"<label for='${1:Nombre}'> ${2:Mostrar}</label>",
-				"<input type='file' id='$1' name='$1' accept='image/png,image/jpg'>"
-			],
-			"description": "Input tipo Archivo"
-		},
-		
-		"input hiddden": {
-			"prefix": "inp_hidden",
-			"body": [
-				
-				"<input type='hidden' id='${1:nombre}' name='$1' value=''>"
-			],
-			"description": "Input tipo Dato Oculto"
-		},
-		"input Iconos Fontasoe": {
-			"prefix": "inp_iconos_fontasowe",
-			"body": [
-				
-				"<!-- input con fotasowe NOTA:Buscar la Clase 'inputText' en Snippest -->",
-				"<div class='inputWithIcon'>",
-				"\t<input type='text' class='inputText' placeholder='nombre'></input>",
-				"\t<i class='fas fa-user fa-lg -fa-fw'></i>",
-				"</div>"
-			],
-			"description": "Input tipo Dato Oculto"
-		},
-	
+		"prefix": "inp_Imagen",
+		"body": [
+			"<input type='image$1' id='$2' src='${3:Ruta}' onclick='$4' class='$5'>",
+			"$6"
+		],
+		"description": "Input tipo Boton de Imagne"
+	},
+	"input Checkbox": {
+		"prefix": "inp_chekbox",
+		"body": [
+			"<input type='checkbox' id='${1:Nombre}'>",
+			"<label for='$1'> ${2:Mostrar}</label>"
+		],
+		"description": "Input tipo Checkbox"
+	},
+	"input RadioBox": {
+		"prefix": "inp_radiobox",
+		"body": [
+			"<input type='radio' id='${1:Nombre}' name='$1' value='${2:Valor}'>",
+			"<label for='$1'> ${3:Mostrar}</label>"
+		],
+		"description": "Input tipo Checkbox"
+	},
+	"input DataLista": {
+		"prefix": "inp_datalist",
+		"body": [
+			"<input type='text' list='${1:Nombre}' id='$2' name='$3'>",
+			"<datalist id='$1'>",
+			"<option value=''> </option>",
+			"</datalist>"
+		],
+		"description": "Input tipo Checkbox"
+	},
+	"input File": {
+		"prefix": "inp_file",
+		"body": [
+			"<label for='${1:Nombre}'> ${2:Mostrar}</label>",
+			"<input type='file' id='$1' name='$1' accept='image/png,image/jpg'>"
+		],
+		"description": "Input tipo Archivo"
+	},
+	"input hiddden": {
+		"prefix": "inp_hidden",
+		"body": [
+			"<input type='hidden' id='${1:nombre}' name='$1' value=''>"
+		],
+		"description": "Input tipo Dato Oculto"
+	},
+	"input Iconos Fontasoe": {
+		"prefix": "inp_iconos_fontasowe",
+		"body": [
+			"<!-- input con fotasowe NOTA:Buscar la Clase 'inputText' en Snippest -->",
+			"<div class='inputWithIcon'>",
+			"\t<input type='text' class='inputText' placeholder='nombre'></input>",
+			"\t<i class='fas fa-user fa-lg -fa-fw'></i>",
+			"</div>"
+		],
+		"description": "Input tipo Dato Oculto"
+	},
 	"munu": {
-	"input Reset": {
+		"input Reset": {
 			"prefix": "inp_reset",
 			"body": [
 				"<input type='reset$1' id='$2' value='$3'  class='$4'>",
@@ -166,7 +162,7 @@
 			],
 			"description": "Input tipo REseteo"
 		},
-	"input submit": {
+		"input submit": {
 			"prefix": "inp_submit",
 			"body": [
 				"<input type='submit$1' id='$2' value='Enviar$3'  class='$4'>",
@@ -174,21 +170,21 @@
 			],
 			"description": "Input tipo REseteo"
 		},
-	"munu": {
+		"munu": {
 			"prefix": "menu",
 			"body": [
 				"ul>li*${1:Cantidad}>a[href='#']{opcion}"
 			],
 			"description": "Crea menu desde EMME"
 		},
-	"select": {
+		"select": {
 			"prefix": "cuadro_combinado",
 			"body": [
 				"select>option*${1:Cantidad}"
 			],
 			"description": "Cuadro Combinado"
 		},
-	"cuadro lista": {
+		"cuadro lista": {
 			"prefix": "cuadro_lista",
 			"body": [
 				"select[size='${1:Cantidad}']>(option*$1)"
@@ -205,13 +201,13 @@
 		"form_N": {
 			"prefix": "form_n",
 			"body": [
-				"<form action='${1:url}' method='${2:post}' name='${3:Nombre}'>",
+				"<form action='${1:<?php htmlspecialchars( $$_SERVER['PHP_SELF']) ?>}' method='${2:post}' name='${3:Nombre}'>",
 				"<!-- Contenido -->",
 				"<label for=''>Nombre</label>",
 				"<input type='text' id='' placeholder='Nombe' class=''>",
 				"<!-- Botones -->",
 				"<input type='reset' id='' value='Resetear' onclick='' class=''>",
-				"<input type='submit' id='' value='Enviar' onclick='' class=''>",
+				"<input type='submit' id='' value='Enviar' onclick='' name='envia' class=''>",
 				"</form>"
 			],
 			"description": "Crea Formulario."
@@ -242,7 +238,6 @@
 			],
 			"description": "Crea Script para Conectar Bootstrap Css Local."
 		},
-		
 		"link _Icono": {
 			"prefix": "link_Icono",
 			"body": [
@@ -274,7 +269,6 @@
 				"\t\t<li><img src='img/slider1.jpg' alt=""></li>",
 				"\t</ul>",
 				"</div>"
-				
 			],
 			"description": "Crea un Slider de 4 imagenes forma horizontal."
 		},
@@ -326,7 +320,7 @@
 			],
 			"description": "Crea Botones Personalizados Joserafa."
 		},
-		"if":{
+		"if": {
 			"prefix": "if",
 			"body": [
 				"<?php if($1): ?>",
@@ -337,11 +331,10 @@
 			],
 			"description": "if php tag HTML"
 		},
-		"php_HTML":{
+		"php_HTML": {
 			"prefix": "php",
 			"body": [
 				"<?= $1 ?>",
-	
 			],
 			"description": "PHP -Practico."
 		},
@@ -363,7 +356,6 @@
 			],
 			"description": "foreach loop"
 		},
-	
 		"while": {
 			"prefix": "while",
 			"body": [
