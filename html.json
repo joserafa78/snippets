@@ -1,17 +1,4 @@
 {
-	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
 	"input texto": {
 		"prefix": "inp_texto",
 		"body": [
@@ -201,13 +188,13 @@
 		"form_N": {
 			"prefix": "form_n",
 			"body": [
-				"<form action='${1:<?php htmlspecialchars( $$_SERVER['PHP_SELF']) ?>}' method='${2:post}' name='${3:Nombre}'>",
+				"<form action='${1:url}' method='${2:post}' name='${3:Nombre}'>",
 				"<!-- Contenido -->",
 				"<label for=''>Nombre</label>",
 				"<input type='text' id='' placeholder='Nombe' class=''>",
 				"<!-- Botones -->",
 				"<input type='reset' id='' value='Resetear' onclick='' class=''>",
-				"<input type='submit' id='' value='Enviar' onclick='' name='envia' class=''>",
+				"<input type='submit' id='' value='Enviar' onclick='' class=''>",
 				"</form>"
 			],
 			"description": "Crea Formulario."
@@ -220,6 +207,14 @@
 			],
 			"description": "Crea link para Conectar Bootstrap Css Local."
 		},
+		"link _BootsrapWeb": {
+			"prefix": "link_bootstrap_Web",
+			"body": [
+				"<!-- BOOSTSTRAP web -->",
+				"<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>"
+			],
+			"description": "Crea link para Conectar Bootstrap web."
+		},
 		"link _fontasome": {
 			"prefix": "link_fotasome_Local",
 			"body": [
@@ -227,6 +222,22 @@
 				"<link rel='stylesheet' href='css-fontasowe/all.min.css' />"
 			],
 			"description": "Crea link para Conectar Fotasowe Css Local."
+		},
+		"link _fontasome": {
+			"prefix": "link_fotasome_WEB",
+			"body": [
+				"<!-- BOOSTSTRAP https://fontawesome.com/v4/icons/ -->",
+				"<script src='https://kit.fontawesome.com/cbc774aed7.js' crossorigin='anonymous'></script>"
+			],
+			"description": "Crea link para Conectar Fotasowe web."
+		},
+		"link _icon_bootstrap": {
+			"prefix": "link_icon_BOOTSTRAP",
+			"body": [
+				"<!-- BOOSTSTRAP https://getbootstrap.com/docs/5.3/helpers/icon-link/-->",
+				"<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css'>"
+			],
+			"description": "Crea link para Conectar Bootstrap web."
 		},
 		"script _BootsrapLocal": {
 			"prefix": "script_bootstrap_Local",
@@ -237,6 +248,16 @@
 				"<script type='text/javascript' src='jsbootstrap/popper.min.js'></script>"
 			],
 			"description": "Crea Script para Conectar Bootstrap Css Local."
+		},
+		"script _BootsrapWEB": {
+			"prefix": "script_bootstrap_WEB",
+			"body": [
+				"<!-- BOOSTSTRAP WEB -->",
+				"<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous'></script>",
+				"<script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous'></script>",
+				"<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js' integrity='sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy' crossorigin='anonymous'></script>"
+			],
+			"description": "Crea Script para Conectar Bootstrap WEB."
 		},
 		"link _Icono": {
 			"prefix": "link_Icono",
