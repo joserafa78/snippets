@@ -188,14 +188,24 @@
 		"form_N": {
 			"prefix": "form_n",
 			"body": [
+				"<!--Se Requiere Bootstrap Web-->",
+				"<div class='card card-body'>",
 				"<form action='${1:url}' method='${2:post}' name='${3:Nombre}'>",
 				"<!-- Contenido -->",
+				"<div class='form-group'>",
 				"<label for=''>Nombre</label>",
-				"<input type='text' id='' placeholder='Nombe' class=''>",
-				"<!-- Botones -->",
-				"<input type='reset' id='' value='Resetear' onclick='' class=''>",
-				"<input type='submit' id='' value='Enviar' onclick='' class=''>",
-				"</form>"
+				"<input type='text' id='' placeholder='Nombre'name='nombre' class='form-control'><br>",
+				"</div>",
+				"<div class='form-group'>",
+				"<label for=''>Numero</label>",
+				"<input type='number' id='' placeholder='Numero'name='numero' class='form-control'><br>",
+				"</div>",
+				"<!-- Botones y sus Clases-->",
+				"<!-- primaryDe,secondaryDeg,successDeg,warningDeg ,dangerDeg-->",
+				"<input type='reset' id='' value='Resetear' onclick='' class='botonRect primaryDeg'>",
+				"<input type='submit' id='' value='Enviar' onclick='' class='botonRect primaryDeg'>",
+				"</form>",
+				"</div>"
 			],
 			"description": "Crea Formulario."
 		},
@@ -223,7 +233,7 @@
 			],
 			"description": "Crea link para Conectar Fotasowe Css Local."
 		},
-		"link _fontasome": {
+		"link _fontasomeWeb": {
 			"prefix": "link_fotasome_WEB",
 			"body": [
 				"<!-- BOOSTSTRAP https://fontawesome.com/v4/icons/ -->",
@@ -341,6 +351,19 @@
 			],
 			"description": "Crea Botones Personalizados Joserafa."
 		},
+		"Boton Jose Rafa Rectangulo Degradado": {
+			"prefix": "boton_Degradado",
+			"body": [
+				"<!-- BOTONES Rectangulo Degradado Clases: Buscar Clase 'botonDeg' -->",
+				"<!-- primaryDeg,secondaryDeg,successDeg ,warningDeg ,dangerDeg-->",
+				"<!-- mini,pequeño,medio,largo,extralargo  -->",
+				"<!-- radio -->",
+				"<a href='' class='botonDeg primaryDeg '>",
+				"\t<i class='fab fa-twitter'> Salir</i>",
+				"</a>"
+			],
+			"description": "Crea Botones Personalizados Degradados."
+		},
 		"if": {
 			"prefix": "if",
 			"body": [
@@ -385,6 +408,6 @@
 				"<?php endwhile; ?>"
 			],
 			"description": "while loop"
-		},
+		}
 	}
 }
